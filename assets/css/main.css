@@ -29,6 +29,48 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.profile-pic {
+    width: 250px;       /* adjust number until it looks right */
+    height: auto;       /* keeps proportions */
+    border-radius: 50%; /* optional: circle crop */
+    margin-bottom: 15px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.carousel .slides img {
+  display: none;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carousel .slides img.active {
+  display: block;
+}
+
+.carousel .prev,
+.carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  user-select: none;
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+	
 body {
 	line-height: 1;
 }

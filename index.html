@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -17,9 +18,10 @@
 
 				<!-- Intro -->
 					<div id="intro">
+						<img src="images/profile.jpg" alt="Anna Calderon" class="profile-pic" />
 						<h1>Anna Calderon<br />
 						Portfolio</h1>
-						<p>Research Data Analyst skilled in R, SQL, Python, Tableau
+						<p>Research Data Analyst skilled in R, SQL, Python, HTML, Tableau
 						<a href="https://www.linkedin.com/in/calderon-a/">@acalderon</a></p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -48,13 +50,26 @@
 							<article class="post featured">
 								<header class="major">
 									
-									<h2><a href="https://annacalderon.github.io/suicide_report/"> Suicide Trends Report </a></h2>
-									<p> This is report sample of suicide trends. Suicide is one of the leading causes of death in the United States. In this project we can 
-										visualize suicide trends at a national and state level using public data. </p>
+									<h2><a href="https://annacalderon.github.io/predicting_gallstone/subgroups.html"> Predicting Gallstone Disease</a></h2>
+									<p> In this project, I replicated a prediction model to identify key predictors of gallstone risk at the subgroup level. 
+										Using Gradient Boosted Machines and logistic regression, I compared predictor importance across groups, highlighting 
+										contrasts by sex and other characteristics. Visualizations of the top variables showed that C-Reactive Protein (CRP), 
+										Vitamin D, and protein-related measures were especially influential in women, suggesting distinct risk profiles that 
+										support a precision medicine approach.</p>
 								</header>
-								<a href="https://annacalderon.github.io/suicide_report/"class="image main"><img src="images/suicide.png" alt="" /></a>
+									<div class="carousel">
+										<div class="slides">
+											<img src="images/sex.png" alt="Gallstone predictors by sex" />
+											<img src="images/age.png" alt="Gallstone predictors by age" />
+											<img src="images/ob.png" alt="Gallstone predictors by obesity" />
+																	
+										</div>
+  										<a class="prev">&#10094;</a>
+  										<a class="next">&#10095;</a>
+									</div>
+								
 								<ul class="actions special">
-									<li><a href="https://annacalderon.github.io/suicide_report/"class="button large">View Project</a></li>
+									<li><a href="https://annacalderon.github.io/predicting_gallstone/subgroups.html"class="button large">View Project</a></li>
 								</ul>
 							</article>
 
@@ -63,12 +78,25 @@
 								<article>
 									<header>
 										
+										<h2><a href="https://annacalderon.github.io/suicide_report/"> Suicide Trends Report <br />
+											</a></h2>
+									</header>
+									<a href="https://annacalderon.github.io/suicide_report/" class="image fit"><img src="images/suicide.png" alt="" /></a>
+									<p> This is report sample of suicide trends. Suicide is one of the leading causes of death in the United States. In this project we can 
+										visualize suicide trends at a national and state level using public data. </p>
+									<ul class="actions special">
+										<li><a href="https://annacalderon.github.io/suicide_report/" class="button">View Project</a></li>
+									</ul>
+								</article>
+								
+								<article>
+									<header>
+										
 										<h2><a href="https://annacalderon.github.io/beautiful_maps/"> Choropleth Maps <br />
 											</a></h2>
 									</header>
 									<a href="https://annacalderon.github.io/beautiful_maps/" class="image fit"><img src="images/bmap.png" alt="" /></a>
-									<p> The example below focuses on a static version using ggplot2. Cleck on "View Porject" to 
-										see an interactive version with leaflet. </p>
+									<p> Static choropleth map created with ggplot2. Click “View Project” to see the interactive version built in Leaflet. </p>
 									<ul class="actions special">
 										<li><a href="https://annacalderon.github.io/beautiful_maps/" class="button">View Project</a></li>
 									</ul>
@@ -81,13 +109,8 @@
 											</a></h2>
 									</header>
 									<a href="https://github.com/AnnaCalderon/Cluster_Sentiment_Reviews_AA" class="image fit"><img src="images/Main.jpg" alt="" /></a>
-									<p> In this project, we applied cluster and sentiment analyses to American Airlines passenger reviews and satisfaction ratings. 
-										The data was obtained through surveys, and the goal was to identify key drivers of dissatisfaction. 
-										We used k-means clusters to inspect the characteristics of each segment based on (1) needs-based variables and 
-										(2) observable characteristics. Profiling clusters by needs-based variables helped us understand how the 
-										three market segments differ in their needs which in turn will aid the firm in offering products and services 
-										to match the segments' unique needs. Profiling clusters on observable characteristics helped identify customers 
-										to target them with the right solution to dissatisfaction.</p>
+									<p> This project used cluster and sentiment analysis on American Airlines passenger reviews to identify drivers of dissatisfaction. 
+										K-means clustering revealed three distinct customer segments, helping the airline better tailor services and target solutions.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/AnnaCalderon/Cluster_Sentiment_Reviews_AA" class="button">View Project</a></li>
 									</ul>
@@ -151,7 +174,7 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">anna.calderon@columbia.edu</a></p>
+								<p><a href="#">calderon.anna.rosa@gmail.edu</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -178,6 +201,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/carousel.js"></script>
+
 
 	</body>
 </html>
